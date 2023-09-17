@@ -1,0 +1,12 @@
+@import '../../../../../styles/breakpoints';
+
+.css {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+
+  @media (max-width: $they-say-breakpoint) {
+    justify-content: start;
+    gap: 5rem;
+  }
+}

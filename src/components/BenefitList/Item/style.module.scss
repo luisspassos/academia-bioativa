@@ -1,0 +1,39 @@
+@keyframes jumping {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.item {
+  display: flex;
+  align-items: start;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+
+  &.highlighted {
+    font-weight: 800;
+
+    span {
+      font-size: 1.8em;
+
+      animation-name: jumping;
+      animation-duration: 1.4s;
+      animation-iteration-count: infinite;
+      transform: scale(1);
+
+      @media (prefers-reduced-motion) {
+        animation-name: none;
+      }
+    }
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+}

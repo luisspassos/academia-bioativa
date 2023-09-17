@@ -1,0 +1,27 @@
+@import '../../../styles/breakpoints';
+
+.fade {
+  @media (max-width: $home) {
+    align-self: flex-end;
+  }
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  @media (max-width: $home) {
+    max-width: 70.25rem;
+  }
+
+  img {
+    flex-shrink: 0;
+    width: 70%;
+    min-width: 0;
+    min-height: 0;
+  }
+}

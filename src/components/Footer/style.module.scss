@@ -1,0 +1,31 @@
+.footer {
+  --column-gap: 13rem;
+  --row-gap: 6rem;
+  background-color: var(--smooth-background);
+  margin-left: calc(-1 * var(--padding-inline));
+  display: flex;
+  padding-inline: var(--padding-inline);
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  font-size: 1.9rem;
+  column-gap: var(--column-gap);
+  row-gap: var(--row-gap);
+  position: relative;
+  overflow-y: hidden;
+
+  @media (max-width: 50.625rem) {
+    flex-direction: column;
+    --row-gap: 4rem;
+  }
+
+  > div {
+    display: flex;
+    column-gap: var(--column-gap);
+    row-gap: var(--row-gap);
+
+    @media (max-width: 76.25rem) {
+      flex-direction: column;
+      row-gap: var(--row-gap);
+    }
+  }
+}

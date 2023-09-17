@@ -1,0 +1,25 @@
+.container {
+  font-weight: 800;
+  font-size: 4em;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0 0.1em;
+
+  small {
+    font-size: 0.5em;
+  }
+
+  div {
+    display: flex;
+    align-items: end;
+
+    small {
+      font-size: 0.3em;
+    }
+  }
+}
+
+.price {
+  font-size: 4em;
+}

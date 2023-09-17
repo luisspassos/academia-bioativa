@@ -1,0 +1,18 @@
+@import '../../../styles/breakpoints';
+
+.container {
+  width: 100%;
+}
+
+.plans {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+
+  @media (max-width: $plans) {
+    flex-direction: column;
+  }
+}

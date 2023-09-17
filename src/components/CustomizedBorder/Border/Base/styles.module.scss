@@ -1,0 +1,8 @@
+.base {
+  --margin: var(--customized-border-margin);
+
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  z-index: -1;
+}

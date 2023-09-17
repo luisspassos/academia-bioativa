@@ -1,0 +1,16 @@
+@import '../../styles/breakpoints';
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 5rem;
+  row-gap: 6rem;
+  overflow-x: hidden;
+  margin-left: calc(var(--padding-inline) * -1);
+  padding-left: var(--padding-inline);
+
+  @media (max-width: $home) {
+    flex-direction: column;
+  }
+}
